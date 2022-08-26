@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    bella pevvoi
+    <h1>Lista film</h1>
+    <ul>
+       @foreach ($movies as $movie)
+          <li>{{ $movie->title }} - {{ $movie->original_title }}</li> 
+       @endforeach
+    </ul>
 </body>
 </html>
